@@ -29,11 +29,23 @@ ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-Al-aoa">
+                                <rect key="frame" x="20" y="230" width="335" height="32"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wzc-Al-aoa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Kg-nk-qOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wzc-Al-aoa" secondAttribute="trailing" constant="20" id="Eur-np-ECz"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M2W-Gb-ie7"/>
+                            <constraint firstItem="wzc-Al-aoa" firstAttribute="top" secondItem="DBN-fs-Zz2" secondAttribute="bottom" constant="10" id="QXK-BB-VIS"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hOl-Hv-946"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="kF5-ZK-2rw"/>
                         </constraints>
