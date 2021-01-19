@@ -22,9 +22,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Dlf-Rg-tpw"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
 
-ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -38,6 +38,16 @@ ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
                                     <segment title="Third"/>
                                 </segments>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-8h-Gvx">
+                                <rect key="frame" x="306" y="278" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemOrangeColor"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Mode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiG-pi-UM8">
+                                <rect key="frame" x="20" y="281" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,9 +55,14 @@ ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
                             <constraint firstItem="wzc-Al-aoa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Kg-nk-qOC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wzc-Al-aoa" secondAttribute="trailing" constant="20" id="Eur-np-ECz"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M2W-Gb-ie7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cwE-8h-Gvx" secondAttribute="trailing" constant="20" id="P7r-A1-IrA"/>
                             <constraint firstItem="wzc-Al-aoa" firstAttribute="top" secondItem="DBN-fs-Zz2" secondAttribute="bottom" constant="10" id="QXK-BB-VIS"/>
+                            <constraint firstItem="MiG-pi-UM8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="To8-hU-K9y"/>
+                            <constraint firstItem="cwE-8h-Gvx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MiG-pi-UM8" secondAttribute="trailing" constant="8" symbolic="YES" id="WEN-YJ-jNc"/>
+                            <constraint firstItem="MiG-pi-UM8" firstAttribute="top" secondItem="wzc-Al-aoa" secondAttribute="bottom" constant="20" id="aIz-aR-C4h"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hOl-Hv-946"/>
                             <constraint firstItem="DBN-fs-Zz2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="kF5-ZK-2rw"/>
+                            <constraint firstItem="cwE-8h-Gvx" firstAttribute="top" secondItem="wzc-Al-aoa" secondAttribute="bottom" constant="17" id="kn7-6O-bVo"/>
                         </constraints>
                     </view>
                 </viewController>
