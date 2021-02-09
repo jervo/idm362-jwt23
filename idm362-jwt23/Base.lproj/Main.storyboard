@@ -105,7 +105,7 @@
         <image name="myFace" width="512" height="512"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="happy">
-            <color red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.30799999833106995" green="0.56199997663497925" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
