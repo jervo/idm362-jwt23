@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7C6945725D2DAA6001B2363 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C6945625D2DAA6001B2363 /* EditViewController.swift */; };
 		A7E2A74B25B72749007FEDF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74A25B72749007FEDF9 /* AppDelegate.swift */; };
 		A7E2A74D25B72749007FEDF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */; };
 		A7E2A74F25B72749007FEDF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74E25B72749007FEDF9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7C6945625D2DAA6001B2363 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		A7E2A74725B72749007FEDF9 /* idm362-jwt23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-jwt23.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2A74A25B72749007FEDF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */,
 				A7E2A74E25B72749007FEDF9 /* ViewController.swift */,
 				A7E2A75025B72749007FEDF9 /* Main.storyboard */,
+				A7C6945625D2DAA6001B2363 /* EditViewController.swift */,
 				A7E2A75325B7274B007FEDF9 /* Assets.xcassets */,
 				A7E2A75525B7274B007FEDF9 /* LaunchScreen.storyboard */,
 				A7E2A75825B7274B007FEDF9 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C6945725D2DAA6001B2363 /* EditViewController.swift in Sources */,
 				A7E2A74F25B72749007FEDF9 /* ViewController.swift in Sources */,
 				A7E2A74B25B72749007FEDF9 /* AppDelegate.swift in Sources */,
 				A7E2A74D25B72749007FEDF9 /* SceneDelegate.swift in Sources */,
