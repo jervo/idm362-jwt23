@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7C0B21125F7C26F005C4DAB /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C0B21025F7C26F005C4DAB /* FriendsViewController.swift */; };
+		A7C0B21425F7D0E2005C4DAB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C0B21325F7D0E2005C4DAB /* DetailsViewController.swift */; };
 		A7E2A74B25B72749007FEDF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74A25B72749007FEDF9 /* AppDelegate.swift */; };
 		A7E2A74D25B72749007FEDF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */; };
 		A7E2A74F25B72749007FEDF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A74E25B72749007FEDF9 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7C0B21025F7C26F005C4DAB /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		A7C0B21325F7D0E2005C4DAB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A7E2A74725B72749007FEDF9 /* idm362-jwt23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-jwt23.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2A74A25B72749007FEDF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				A7E2A74C25B72749007FEDF9 /* SceneDelegate.swift */,
 				A7E2A74E25B72749007FEDF9 /* ViewController.swift */,
 				A7E2A75025B72749007FEDF9 /* Main.storyboard */,
+				A7C0B21325F7D0E2005C4DAB /* DetailsViewController.swift */,
+				A7C0B21025F7C26F005C4DAB /* FriendsViewController.swift */,
 				A7E2A75325B7274B007FEDF9 /* Assets.xcassets */,
 				A7E2A75525B7274B007FEDF9 /* LaunchScreen.storyboard */,
 				A7E2A75825B7274B007FEDF9 /* Info.plist */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C0B21125F7C26F005C4DAB /* FriendsViewController.swift in Sources */,
 				A7E2A74F25B72749007FEDF9 /* ViewController.swift in Sources */,
 				A7E2A74B25B72749007FEDF9 /* AppDelegate.swift in Sources */,
 				A7E2A74D25B72749007FEDF9 /* SceneDelegate.swift in Sources */,
+				A7C0B21425F7D0E2005C4DAB /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,21 +9,89 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Friends-->
+        <!--Friends View Controller-->
         <scene sceneID="PPQ-CR-XKe">
             <objects>
-                <viewController id="jWX-Uh-Ukm" sceneMemberID="viewController">
+                <viewController id="jWX-Uh-Ukm" customClass="FriendsViewController" customModule="idm362_jwt23" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VXh-i6-swm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zoK-JT-z6L">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="e8l-Ub-3Rw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e8l-Ub-3Rw" id="q10-ns-IbG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jWX-Uh-Ukm" id="Bio-Zq-IIq"/>
+                                    <outlet property="delegate" destination="jWX-Uh-Ukm" id="ffP-Ma-1IU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MIZ-hJ-bCf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zoK-JT-z6L" firstAttribute="top" secondItem="MIZ-hJ-bCf" secondAttribute="top" id="Ird-Ri-tQM"/>
+                            <constraint firstItem="MIZ-hJ-bCf" firstAttribute="trailing" secondItem="zoK-JT-z6L" secondAttribute="trailing" id="Mim-Jz-vao"/>
+                            <constraint firstItem="zoK-JT-z6L" firstAttribute="leading" secondItem="MIZ-hJ-bCf" secondAttribute="leading" id="lGw-k2-STK"/>
+                            <constraint firstItem="MIZ-hJ-bCf" firstAttribute="bottom" secondItem="zoK-JT-z6L" secondAttribute="bottom" id="xSJ-GP-M75"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Friends" image="folder.fill" catalog="system" id="Nyn-DN-Qey"/>
+                    <navigationItem key="navigationItem" id="nzI-BM-P8p">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kNG-l1-zNr">
+                            <color key="tintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="addName:" destination="jWX-Uh-Ukm" id="aR4-Zd-oAS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zoK-JT-z6L" id="5E7-ZV-JTN"/>
+                        <segue destination="Zqv-Yw-4Ys" kind="show" identifier="showDetail" id="evl-xq-bdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8c-up-6Xn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="-294.60269865067471"/>
+            <point key="canvasLocation" x="126" y="438"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="c4J-Dh-Of4">
+            <objects>
+                <viewController id="Zqv-Yw-4Ys" userLabel="Details" customClass="DetailsViewController" customModule="idm362_jwt23" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHp-xd-oUC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIG NAME HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-El-UTT">
+                                <rect key="frame" x="125" y="323" width="125.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2uY-gk-NPt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hau-El-UTT" firstAttribute="centerY" secondItem="xHp-xd-oUC" secondAttribute="centerY" id="0en-ae-fyf"/>
+                            <constraint firstItem="hau-El-UTT" firstAttribute="centerX" secondItem="xHp-xd-oUC" secondAttribute="centerX" id="AKq-bu-kXS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aFS-XP-XG9"/>
+                    <connections>
+                        <outlet property="bigName" destination="hau-El-UTT" id="TdP-H5-J7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpa-Gm-B9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="1182"/>
         </scene>
         <!--Edit-->
         <scene sceneID="4Yv-Gr-gdr">
@@ -89,14 +157,33 @@
                         <color key="selectedImageTintColor" name="happy"/>
                     </tabBar>
                     <connections>
+                        <segue destination="nfU-R5-gV5" kind="relationship" relationship="viewControllers" id="l3h-po-Da5"/>
                         <segue destination="mYO-QV-DLE" kind="relationship" relationship="viewControllers" id="kCO-rZ-alN"/>
                         <segue destination="XK9-bC-mge" kind="relationship" relationship="viewControllers" id="XJK-DG-3vu"/>
-                        <segue destination="jWX-Uh-Ukm" kind="relationship" relationship="viewControllers" id="l3h-po-Da5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GF-tv-NKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-623" y="-1117"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="mzO-6B-2xY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nfU-R5-gV5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" image="folder.fill" catalog="system" id="Nyn-DN-Qey"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rSV-GM-EMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jWX-Uh-Ukm" kind="relationship" relationship="rootViewController" id="ugE-oD-Qoc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Erv-tS-TPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="-294.60269865067471"/>
         </scene>
     </scenes>
     <resources>
@@ -104,6 +191,9 @@
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="myFace" width="512" height="512"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.99599999189376831" green="0.13699999451637268" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="happy">
             <color red="0.30799999833106995" green="0.56199997663497925" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
